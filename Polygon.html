@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Polygon
+        </title>
+        <style>
+            body{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var count = 0;
+        </script>
+        <input type="image" src="polygon.jpg" width="400" height="300" onclick="
+        if (count === 0) {
+            alert('만지지마');
+        }
+        if (count === 1) {
+            alert('만지지 마라고 했다');
+        }
+        if (count === 2) {
+            alert('난 기회를 줬다');
+            var target = document.querySelector('body');
+            var akai = true;
+            setInterval(toggle, 100);
+
+            function toggle() {
+                if(akai) {
+                    target.style.backgroundColor = 'blue';
+                    akai = false;
+                }
+                else {
+                    target.style.backgroundColor = 'red';
+                    akai = true;
+                }
+            }
+
+        }
+        count++;
+        ">
+    </body>
+</html>
